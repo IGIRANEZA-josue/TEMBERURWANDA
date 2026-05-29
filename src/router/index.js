@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
@@ -9,7 +9,6 @@ import NorthP from '../views/NorthP.vue'
 import SouthP from '../views/SouthP.vue'
 import WestP from '../views/WestP.vue'
 import EastP from '../views/EastP.vue'
-
 
 const routes = [
   {
@@ -23,45 +22,52 @@ const routes = [
     name: 'About',
     component: About,
   },
+
   {
     path: '/Contact',
     name: 'Contact',
     component: Contact,
   },
+
   {
     path: '/Services',
     name: 'Services',
     component: Services,
   },
+
   {
     path: '/WestP',
     name: 'WestP',
     component: WestP,
   },
+
   {
     path: '/EastP',
     name: 'EastP',
     component: EastP,
   },
+
   {
     path: '/NorthP',
     name: 'NorthP',
     component: NorthP,
   },
+
   {
     path: '/Kigali',
-    name: 'kigali',
+    name: 'Kigali',
     component: Kigali,
   },
+
   {
     path: '/SouthP',
-    name: 'Southp',
+    name: 'SouthP',
     component: SouthP,
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 
