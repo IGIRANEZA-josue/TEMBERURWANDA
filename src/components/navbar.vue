@@ -147,7 +147,7 @@
         <select
           v-model="currentLanguage"
           @change="setLanguage(currentLanguage)"
-          class="bg-green-700 text-white px-3 py-2 rounded-lg border border-green-400 focus:outline-none cursor-pointer"
+          class="bg-slate-950 text-white px-3 py-2 rounded-lg border border-green-400 focus:outline-none cursor-pointer"
         >
           <option value="en">🇬🇧 English</option>
           <option value="rw">🇷🇼 Kinyarwanda</option>
