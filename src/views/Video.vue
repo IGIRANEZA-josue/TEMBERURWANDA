@@ -64,32 +64,32 @@ const videos = [
   {
     title: "Visit Rwanda",
     description: "Official Rwanda tourism experience.",
-    link: "https://youtu.be/-kerFdxWG-w"
+    link: "https://www.youtube.com/watch?v=-kerFdxWG-w"
   },
   {
     title: "Mountain Gorillas",
     description: "Discover Rwanda's famous gorillas.",
-    link: "https://youtu.be/b1V4pzfuncg"
+    link: "https://www.youtube.com/watch?v=b1V4pzfuncg&t=19s"
   },
   {
     title: "Lake Kivu",
     description: "Relax along Rwanda's scenic lakeside.",
-    link: "https://youtu.be/Tdfdjhg22J0"
+    link: "https://www.youtube.com/watch?v=Tdfdjhg22J0"
   },
   {
     title: "Kigali City Tour",
     description: "Explore Rwanda's capital city.",
-    link: "https://youtu.be/QQ7mscbSuLk"
+    link: "https://www.youtube.com/watch?v=QQ7mscbSuLk&t=15s"
   },
   {
     title: "Nyungwe Forest",
     description: "Canopy walks and wildlife adventures.",
-    link: "https://youtu.be/_v7vj0Fzpvs"
+    link: "https://www.youtube.com/watch?v=_v7vj0Fzpvs"
   },
   {
     title: "Akagera Safari",
     description: "Experience Rwanda's wildlife.",
-    link: "https://youtu.be/03fzlRWb1cQ"
+    link: "https://www.youtube.com/watch?v=03fzlRWb1cQ&t=32s"
   }
 ]
 
