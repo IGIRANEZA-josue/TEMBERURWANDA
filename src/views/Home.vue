@@ -58,7 +58,9 @@
           <button
             class="bg-green-600 hover:bg-green-700 hover:scale-105 transition-all duration-300 px-8 py-4 rounded-2xl text-lg font-bold shadow-2xl shadow-green-500/30"
           >
-            Explore Rwanda
+           <router-link to="/about" class="text-white no-underline">
+             Explore Rwanda
+           </router-link>
           </button>
 
           <button
@@ -302,6 +304,8 @@
 </template>
 
 <script setup>
+import router from '../router';
+
 // Vue logic can go here later
 </script>
 
