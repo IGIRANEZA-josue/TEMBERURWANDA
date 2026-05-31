@@ -9,6 +9,8 @@ import NorthP from '../views/NorthP.vue'
 import SouthP from '../views/SouthP.vue'
 import WestP from '../views/WestP.vue'
 import EastP from '../views/EastP.vue'
+import Photo from '../views/Photo.vue'
+import Video from '../views/Video.vue'
 
 const routes = [
   {
@@ -63,6 +65,16 @@ const routes = [
     path: '/SouthP',
     name: 'SouthP',
     component: SouthP,
+  },
+  {
+    path: '/Photo',
+    name: 'Photo',
+    component: Photo,
+  },
+  {
+    path: '/Video',
+    name: 'Video',
+    component: Video,
   },
 ]
 

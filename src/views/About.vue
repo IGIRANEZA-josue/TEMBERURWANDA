@@ -28,19 +28,10 @@
         <p class="uppercase tracking-[6px] text-green-300 mb-5">
           Learn More About Rwanda
         </p>
+ 
+        <h1  class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">{{ t.aboutTitle }}</h1>
+<p class="text-lg md:text-2xl text-gray-200 leading-relaxed">{{ t.aboutSubtitle }}</p>
 
-        <h1
-          class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight"
-        >
-          About Visit Rwanda
-        </h1>
-
-        <p
-          class="text-lg md:text-2xl text-gray-200 leading-relaxed"
-        >
-          Discover the beauty, culture, wildlife, and innovation
-          that make Rwanda one of Africa’s most inspiring destinations.
-        </p>
 
       </div>
 
@@ -332,7 +323,15 @@
 </template>
 
 <script setup>
-// Vue logic here
+import { computed } from 'vue'
+import { useLanguage } from '../composables/uselanguage'
+import translations from '../translations'
+
+const { currentLanguage } = useLanguage()
+
+const t = computed(() => {
+  return translations[currentLanguage.value]
+})
 </script>
 
 <style scoped>

@@ -33,18 +33,8 @@
           Explore Our Services
         </p>
 
-        <h1
-          class="text-5xl md:text-7xl font-extrabold leading-tight mb-6"
-        >
-          Experience Rwanda Like Never Before
-        </h1>
-
-        <p
-          class="text-lg md:text-2xl text-gray-200 leading-relaxed"
-        >
-          Discover tourism services designed to make your
-          journey across Rwanda unforgettable.
-        </p>
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">{{ t.servicesTitle }}</h1>
+<p class="text-lg md:text-2xl text-gray-200 leading-relaxed">{{ t.servicesSubtitle }}</p>
 
       </div>
 
@@ -350,7 +340,15 @@
 </template>
 
 <script setup>
-// Future Vue logic
+import { computed } from 'vue'
+import { useLanguage } from '../composables/uselanguage'
+import translations from '../translations'
+
+const { currentLanguage } = useLanguage()
+
+const t = computed(() => {
+  return translations[currentLanguage.value]
+})
 </script>
 
 <style scoped>

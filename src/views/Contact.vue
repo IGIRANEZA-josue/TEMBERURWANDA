@@ -29,18 +29,9 @@
           Get In Touch
         </p>
 
-        <h1
-          class="text-5xl md:text-7xl font-extrabold leading-tight mb-6"
-        >
-          Contact Visit Rwanda
-        </h1>
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">{{ t.contactTitle }}</h1>
+<p class="text-lg md:text-2xl text-gray-200 leading-relaxed">{{ t.contactSubtitle }}</p>
 
-        <p
-          class="text-lg md:text-2xl text-gray-200 leading-relaxed"
-        >
-          We are here to help you discover the beauty of Rwanda
-          and plan unforgettable travel experiences.
-        </p>
 
       </div>
 
@@ -348,7 +339,15 @@
 </template>
 
 <script setup>
-// Vue logic here
+import { computed } from 'vue'
+import { useLanguage } from '../composables/uselanguage'
+import translations from '../translations'
+
+const { currentLanguage } = useLanguage()
+
+const t = computed(() => {
+  return translations[currentLanguage.value]
+})
 </script>
 
 <style scoped>

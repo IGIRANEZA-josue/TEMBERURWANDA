@@ -1,5 +1,6 @@
 <template>
-
+  <section>
+  </section>
   <!-- MAIN WRAPPER -->
   <div class="bg-slate-950 text-white">
 
@@ -38,19 +39,9 @@
           Explore The Heart Of Africa
         </p>
 
-        <h1
-          class="text-5xl md:text-8xl font-extrabold leading-tight mb-6 drop-shadow-2xl"
-        >
-          Visit Rwanda
-        </h1>
+        <h1  class="text-5xl md:text-8xl font-extrabold leading-tight mb-6 drop-shadow-2xl">{{ t.heroTitle }}</h1>
+<p  class="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed">{{ t.heroSubtitle }}</p>
 
-        <p
-          class="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed"
-        >
-          Discover breathtaking landscapes, mountain gorillas,
-          vibrant culture, and unforgettable adventures in the land
-          of a thousand hills.
-        </p>
 
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row gap-5 justify-center">
@@ -304,10 +295,19 @@
 </template>
 
 <script setup>
-import router from '../router';
+import { computed } from 'vue'
+import { useLanguage } from '../composables/uselanguage'
+import translations from '../translations'
 
-// Vue logic can go here later
+// Language system
+const { currentLanguage } = useLanguage()
+
+// Current translations
+const t = computed(() => {
+  return translations[currentLanguage.value]
+})
 </script>
+  
 
 <style scoped>
 
