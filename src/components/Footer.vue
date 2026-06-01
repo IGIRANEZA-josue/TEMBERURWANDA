@@ -56,6 +56,9 @@
         <div class="border-t border-white/10 mt-10 pt-6 text-center text-sm text-gray-500">
           © 2026 Visit Rwanda. All rights reserved.
         </div>
+        <div class="border-t border-white/10 mt-10 pt-6 text-center text-sm text-gray-500">
+          Done By Igiraneza Kabundege Mugisha Josue.
+        </div>
 
       </div>
 
